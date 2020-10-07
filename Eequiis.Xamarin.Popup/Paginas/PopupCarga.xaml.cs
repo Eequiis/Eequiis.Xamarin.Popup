@@ -17,8 +17,8 @@ namespace Eequiis.Xamarin.Popup.Paginas
 		private static readonly int BordeEstandar = 2;  // 2px de borde está bien, menos se ve raro
 		private static readonly int BordeMaximo = 100;  // 100px de borde es descomunal, limitando
 
-		private static readonly Color ColorBorde = Color.Gray;      // Color más oscuro que la caja
-		private static readonly Color ColorCaja = Color.WhiteSmoke; // Color más claro que el borde
+		private static readonly Color ColorBordeEstandar = Color.Gray;      // Color más oscuro que la caja
+		private static readonly Color ColorCajaEstandar = Color.WhiteSmoke; // Color más claro que el borde
 
 		/// <summary>
 		/// <para>26px es el lado mínimo establecido para cualquier Popup de Carga.</para>
@@ -90,6 +90,6 @@ namespace Eequiis.Xamarin.Popup.Paginas
 		/// como color de borde; <see cref="Color.WhiteSmoke"/> como color de la caja contenedora del indicador de
 		/// carga; 100px como lado estándar de la caja; e inicialmente visible y corriendo.</para>
 		/// </summary>
-		public PopupCarga() : this(BordeEstandar, ColorBorde, ColorCaja, LadoEstandar, ActivoEstandar) { }
+		public PopupCarga() : this(BordeEstandar, ColorBordeEstandar, ColorCajaEstandar, LadoEstandar, ActivoEstandar) { }
 	}
 }
