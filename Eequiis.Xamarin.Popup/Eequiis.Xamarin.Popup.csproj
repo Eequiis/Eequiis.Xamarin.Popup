@@ -5,11 +5,13 @@
     <Authors>Eequiis Vásquez</Authors>
     <Company>Eequiis Software</Company>
     <Description>Permite crear un Popup de Carga infinito en base a Rg.Plugins.Popup en Xamarin.Forms.</Description>
-    <Copyright>Eequiis Software 2020</Copyright>
-    <RepositoryUrl>https://github.com/Eequiis/Eequiis.Xamarin.Popup</RepositoryUrl>
-    <RepositoryType>Git en GitHub</RepositoryType>
+    <Copyright>2020 Eequiis Software</Copyright>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
     <PackageTags>C#, Xamarin, Popup, Carga</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Version>1.1.0</Version>
+    <PackageProjectUrl>https://github.com/Eequiis/Eequiis.Xamarin.Popup</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
