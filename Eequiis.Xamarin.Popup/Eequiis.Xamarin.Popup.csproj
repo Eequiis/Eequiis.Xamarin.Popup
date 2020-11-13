@@ -10,8 +10,16 @@
     <RepositoryType></RepositoryType>
     <PackageTags>C#, Xamarin, Popup, Carga</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <PackageProjectUrl>https://github.com/Eequiis/Eequiis.Xamarin.Popup</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Eequiis.Xamarin.Popup.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>Eequiis.Xamarin.Popup.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
