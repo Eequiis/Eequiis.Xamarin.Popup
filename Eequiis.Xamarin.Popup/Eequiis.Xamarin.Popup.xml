@@ -80,6 +80,15 @@
             <param name="navigation">Objeto de navegación de páginas de popup cuya cima se va a obtener.</param>
             <returns>La página que está en la cima de la pila de este navegador, o <c>null</c>.</returns>
         </member>
+        <member name="M:Eequiis.Xamarin.Popup.Servicios.ExtensionesPilaPopup.Paginas(Rg.Plugins.Popup.Contracts.IPopupNavigation)">
+            <summary>
+            <para>Dado un <see cref="T:Rg.Plugins.Popup.Contracts.IPopupNavigation"/>, obtiene el número de páginas (<see cref="T:Rg.Plugins.Popup.Pages.PopupPage"/>) que
+            contiene la pila del objeto de navegación.</para>
+            <para>Si el objeto de navegación de páginas indicado es nulo, o su pila es nula, se devolverá 0.</para>
+            </summary>
+            <param name="navigation">Objeto de navegación cuyo número de páginas de popup se va a consultar.</param>
+            <returns>El número de páginas del objeto de navegación indicado.</returns>
+        </member>
         <member name="M:Eequiis.Xamarin.Popup.Servicios.ExtensionesPilaPopup.DebeBloquearPila(Rg.Plugins.Popup.Contracts.IPopupNavigation)">
             <summary>
             <para>Comprueba si la pila del navegador indicado debería estar bloqueada, es decir, si se debería impedir
