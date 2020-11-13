@@ -1,6 +1,8 @@
 ﻿using Eequiis.Xamarin.Popup.Paginas;
 using Rg.Plugins.Popup.Contracts;
 using Rg.Plugins.Popup.Pages;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Eequiis.Xamarin.Popup.Servicios
@@ -21,10 +23,7 @@ namespace Eequiis.Xamarin.Popup.Servicios
 		/// <param name="navigation">Objeto de navegación de páginas de popup cuya cima se va a obtener.</param>
 		/// <returns>La página que está en la cima de la pila de este navegador, o <c>null</c>.</returns>
 		public static PopupPage CimaPila(this IPopupNavigation navigation)
-		{
-			var pila = navigation?.PopupStack;
-			return pila == null ? null : pila.Count == 0 ? null : pila.Last();
-		}
+			=> navigation?.PopupStack is IReadOnlyList<PopupPage> pila && pila.Count > 0 ? pila.Last() : null;
 
 		/// <summary>
 		/// <para>Comprueba si la pila del navegador indicado debería estar bloqueada, es decir, si se debería impedir
@@ -37,6 +36,7 @@ namespace Eequiis.Xamarin.Popup.Servicios
 		/// <param name="navigation">Navegador de páginas de popup cuya pila se va a comprobar.</param>
 		/// <returns>Un valor booleano que indica si la pila del navegador indicado debería bloquer las operaciones de
 		/// desapilado.</returns>
+		[Obsolete("Sustituir por comprobación de tipos con \"is\".", false)]
 		public static bool DebeBloquearPila(this IPopupNavigation navigation) => navigation.CimaPila() is PopupCarga;
 	}
 }
